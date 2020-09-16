@@ -1,0 +1,11 @@
+.wide-section {
+  background-color: lightgray;
+  width: 100%;
+  padding-top: 72px;
+  padding-bottom: 72px;
+}
+
+.section {
+  padding-top: 72px;
+  padding-bottom: 72px;
+}

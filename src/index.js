@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'holderjs';
 
-import App from './App';
+import { App } from './components/app';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
