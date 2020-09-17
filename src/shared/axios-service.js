@@ -1,6 +1,7 @@
 import axios from 'axios';
 
 export default class AxiosService {
+
   constructor(api_url, api_endpoint) {
     this.api_url = api_url;
     this.api_endpoint = api_endpoint;
@@ -12,4 +13,5 @@ export default class AxiosService {
       return response.data;
     });
   }
+  
 }

@@ -1,5 +1,4 @@
 import React from 'react';
-import { useState, useEffect } from 'react';
 
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
@@ -7,27 +6,10 @@ import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import Row from 'react-bootstrap/Row';
-
-import AxiosService from '../../services/axios-service';
 import './app-style.css';
 
 
-let userService = new AxiosService('https://jsonplaceholder.typicode.com', 'users');
-
-export default function AppView() {
-  const [loading, setLoading] = useState(true);
-  const [users, setUsers] = useState([]);
-
-  async function loadUsers() {
-    setLoading(true);
-    setUsers(await userService.$get());
-    setLoading(false);
-  }
-
-  useEffect(() => {
-    loadUsers();
-  }, []);
-
+export default function AppView({users, loading, onLoadUsers}) {
   return (
     <div className="App">
       <WideSection>
@@ -38,7 +20,7 @@ export default function AppView() {
             extra attention to featured content or information.
           </p>
           <p>
-            <Button variant="primary" onClick={() => loadUsers()}>Learn more</Button>
+            <Button variant="primary" onClick={() => onLoadUsers()}>Learn more</Button>
           </p>
         </Jumbotron>
       </WideSection>
