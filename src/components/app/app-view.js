@@ -14,13 +14,12 @@ export default function AppView({users, loading, onLoadUsers}) {
     <div className="App">
       <WideSection>
         <Jumbotron className="my-0">
-          <h1>Hello, world!</h1>
+          <h1>Fetch Data From API</h1>
           <p>
-            This is a simple hero unit, a simple jumbotron-style component for calling
-            extra attention to featured content or information.
+            This application fetches data from a public API using axios library and displays it with React Bootstrap components.
           </p>
           <p>
-            <Button variant="primary" onClick={() => onLoadUsers()}>Learn more</Button>
+            <Button variant="primary" onClick={() => onLoadUsers()}>Reload Data</Button>
           </p>
         </Jumbotron>
       </WideSection>
@@ -51,19 +50,6 @@ export default function AppView({users, loading, onLoadUsers}) {
         </Row>
 
       </Container>
-
-      <WideSection>
-        <Jumbotron className="my-0">
-          <h1>Hello, world!</h1>
-          <p>
-            This is a simple hero unit, a simple jumbotron-style component for calling
-            extra attention to featured content or information.
-          </p>
-          <p>
-            <Button variant="primary">Learn more</Button>
-          </p>
-        </Jumbotron>
-      </WideSection>
     </div>
   );
 }
