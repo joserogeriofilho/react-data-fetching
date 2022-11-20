@@ -1,1 +1,0 @@
-{"version":3,"sources":["app-style.css"],"names":[],"mappings":"AAAA,cACE,wBAA2B,CAC3B,UAGF,CAEA,uBAJE,gBAAiB,CACjB,mBAMF","file":"main.f72ce860.chunk.css","sourcesContent":[".wide-section {\r\n  background-color: lightgray;\r\n  width: 100%;\r\n  padding-top: 72px;\r\n  padding-bottom: 72px;\r\n}\r\n\r\n.section {\r\n  padding-top: 72px;\r\n  padding-bottom: 72px;\r\n}"]}
